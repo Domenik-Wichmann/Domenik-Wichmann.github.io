@@ -1,12 +1,194 @@
 <!DOCTYPE HTML>
 
 <html>
+
 	<head>
 		<title>About</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Dropdown Button */
+.dropbtn {
+  opacity: 1;
+  color: white;
+  padding: 16px white;
+  font-size: 16px;
+  border: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  border-radius: 515px / 50px;
+  display: none;
+  position: absolute;
+  background-color: #3e3e3e88;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgba(252, 251, 251, 0.79);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #2b2b2bc1;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e3e3e88;}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+			/*Modal Box*/
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+						/*Image on Text*/
+/* Container holding the image and the text */
+.containerpic {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+
+    /* Line Spacing*/
+p.small {
+  line-height: 1.5
+}
+
+p.big {
+  line-height: 1.8;
+}
+
+
+		/*Skill Meter*/
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.containerskills {
+  border-radius: 30px / 50px;
+  height: 10px;
+  width: 500px;
+  background-color: #ddd;
+}
+
+.skills {
+  border-radius: 30px / 50px;
+  height: 10px;
+  text-align: right;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: white;
+}
+
+.ten {width: 10%; background-color: #04AA6D;}
+.twenty {width: 20%; background-color: #04AA6D;} 
+.twentyfive {width: 25%; background-color: #04AA6D;}
+.thirty {width: 30%; background-color: #04AA6D;}
+.forty {width: 40%; background-color: #04AA6D;}
+.fifty {width: 50%; background-color: #04AA6D;}
+.sixty {width: 60%; background-color: #04AA6D;}
+.seventy {width: 70%; background-color: #04AA6D;}
+.seventyfive {width: 75%; background-color: #04AA6D;}
+.eighty {width: 80%; background-color: #04AA6D;}
+.ninety {width: 90%; background-color: #04AA6D;}
+.hundred {width: 100%; background-color: #04AA6D;}	
+
+
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -14,14 +196,14 @@
 			<div id="wrapper" >
 
 				<!-- Header -->
-					<header id="header" >
-						<a href="index.html" class="logo" >Back to Top</a>
-					</header>
+				<header id="header">
+					<a href="index.html" class="logo">Home</a>
+				</header>
 
 				<!-- Nav -->
 				<nav id="nav" >
 					<ul class="links" >
-						<li ><a href="index.html" >Projects</a></li>
+						<li ><a href="index.html#nav" >Projects</a></li>
 						<li class="active" style="background-color:#2B282B;"><a href="about.html" ><span style="color:whitesmoke;">About</span></a></li>
 						
 					</ul>
@@ -37,23 +219,257 @@
 				<!-- Main -->
 					<div id="main" style="background-color:#2B282B;">
 
+					<section style="text-align:center">
+
+						
+						<div class="dropdown" style="margin-bottom:27px">
+							<a href="#profile"><button type="button" class="dropbtn">Profile</button></a>	
+						</div>
+
+						<div class="dropdown">
+							<a href="#skills">
+							<button type="button" class="dropbtn">Skills</button>
+							</a>
+							<div class="dropdown-content">
+							  <a href="#technical">Technical</a>
+							  <a href="#language">Languages</a>
+							</div>							
+						</div>
+
+						<div class="dropdown">
+							<a href="#experience">
+							<button type="button" class="dropbtn">Experience</button>
+							</a>
+							<div class="dropdown-content">
+							  <a href="#professional">Professional</a>
+							  <a href="#educational">Educational</a>
+							</div>							
+						</div>
+
+						<div class="dropdown">
+							<a href="#footer"><button type="button" class="dropbtn">Contact Info</button></a>	
+						</div>
+
+					</section>
+						
 						<!-- Post -->
+
+						<div id="profile" class="containerpic">
+							<img src="images/Header no Name.png" alt="Snow" style="width:100%;">
+							<div class="centered" style="font-size:3vw;"><p class="small" style="text-align:left; font-family:'Abril Fatface'"><b style="font-size:4.5vw; color:#ffffff">Domenik<br/>Wichmann</b><br/>
+							<i style="font-family:veranda">Junior Data Analyst</i></p></div>
+						</div>
+
 							<section class="post">
-								<header class="major">
+
+
+								
+
+
+							
+
+								<p style="color:whitesmoke; text-align: center;">
+									I am always striving to learn new things, and as such, I have found myself working in many different fields over the years:<br/>
+									Chef, Education, Client management, Voice acting, Translating, Logistics, Content creation etc.<br/>
+									During this time, I've seen problems from many different angles, and through the lenses of many different professions and schools of thought.<br/> 
+									I recently started a business with my wife making freeze dried products, and being able to efficiently and effectively gather and analyze data has been a major contribution to the business' success.
+									At some point, no matter which field you work in, or where you live, you need data to guide your decisions, and my most recent endeavor has made that clearer than ever. Through this experience, I have been able to honed a whole host of skills:<br/>
+									-- Excel and SQL for data analysis --<br/>
+									-- Tableau for visualizations --<br/>
+									-- Python and Arduino for programming freeze driers --<br/>
+									-- HTML, CSS, and Javascript for website building --<br/>
+									-- Business relations --<br/>
+									But more than that, I've learned to see business not just from the perspective of the analyst, but also the salesman, the accountant, and the the CEO. With my newly-started
+									business off the ground, it's time to delve further into data analytics<br/><br/><br/>
+								</p>
+						
+
+								
+
+									<h2 id="skills" style="color:whitesmoke;">Skills</h2><br/>
+
+									<h4 id="technical" style="color:whitesmoke">Technical<br/></h4>
+
+									<div class="table-wrapper">
+										<table style="color:whitesmoke">
+																						
+											<tbody>
+												<tr>
+													<td>SQL</td>
+													<td>														
+														<div class="containerskills">
+															<div class="skills seventyfive">Proficient</div>
+														</div>
+													</td>
+													<td></td>
+												
+												</tr>
+												<tr>
+													<td>Python</td>
+													<td>																												
+														<div class="containerskills">
+															<div class="skills thirty">Basic</div>
+														</div>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>Tableau</td>
+													<td> 														
+														<div class="containerskills">
+															<div class="skills fifty">Intermediate</div>
+														</div>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>Excel</td>
+													<td>														
+														<div class="containerskills">
+															<div class="skills ninety">Advanced</div>
+														</div>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>Arduino&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;</td>
+													<td>																												
+														<div class="containerskills">
+															<div class="skills forty">Intermediate</div>
+														</div>
+													</td>
+													<td></td>
+												</tr>
+											</tbody>
+											
+										</table>
+									</div><br/>
+
+									<h4 id="language" style="color:whitesmoke">Languages<br/></h4>
+
+									<div class="table-wrapper">
+										<table style="color:whitesmoke">
+																						
+											<tbody>
+												<tr>
+													<td>English</td>
+													<td>														
+														<div class="containerskills">
+															<div class="skills hundred">Native</div>
+														</div>
+													</td>
+													<td></td>
+												
+												</tr>
+												<tr>
+													<td>German</td>
+													<td>																												
+														<div class="containerskills">
+															<div class="skills seventyfive">Fluent</div>
+														</div>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>Mandarin Chinese</td>
+													<td> 														
+														<div class="containerskills">
+															<div class="skills seventyfive">Fluent</div>
+														</div>
+													</td>
+													<td></td>
+												</tr>
+											</tbody>
+											
+										</table>
+									</div>
+
+
+									<h2 id="experience" style="color:whitesmoke;">Experience</h2><br/>
+
+									<h4 id="professional" style="color:whitesmoke">Professional<br/></h4>
+
+									<div class="table-wrapper">
+										<table style="color:whitesmoke">
+																						
+											<tbody>
+												<tr>
+													<td>Juno Freeze Dried</td>
+													<td>														
+														October 2021 - Present
+													</td>
+													<td>
+														- Handle Business Documents<br/>
+														- Scheduling/Organization<br/>
+														- Create and maintain inventory and sales tracking system<br/>
+														- Identify patterns within sales data to concentrate sales and marketing efforts<br/>
+														- Data visualization for business partners<br/>
+													</td>
+												
+												</tr>
+												<tr>
+													<td>On Process Logistics</td>
+													<td>																												
+														September 2019 - October 2021
+													</td>
+													<td>
+														- Contact client for equipment analysis<br/>
+														- Analyze shipment data to pick efficient routes<br/>
+														- Identify patterns in shipment data to locate problems<br/>
+														- Prepare international shipping documents<br/>
+													</td>
+												</tr>
+												<tr>
+													<td>xxxxxxxxxxxx</td>
+													<td> 														
+														
+													</td>
+													<td></td>
+												</tr>
+													
+											</tbody>
+											
+										</table>
+									</div> <br/>		
 									
-								<div class="image main"><img src="images/Portfolio Resume Header.png"  alt="" /><br />
-									<img src="images/Portfolio Website Resume Body.png"  alt="" />
-								</div>
-								<p style="color:whitesmoke;">Donec eget ex magna. 
-									Here is <span class="bold">some text</span> that we are going to apply 
-									<span class="bold red">different styles</span> to. You can see how 
-									<span class="bold yellow-background">multiple classes</span> can be used to 
-									change the <span class="red bold yellow-background">look and feel</span> 
-									of the text.​Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p style="color:whitesmoke;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+									
+									<h4 id="educational" style="color:whitesmoke">Educational<br/></h4>
+
+									<div class="table-wrapper">
+										<table style="color:whitesmoke">
+																						
+											<tbody>
+												<tr>
+													<td>Beijing Normal University</td>
+													<td>														
+														Beijing, China
+													</td>
+													<td>
+														2017 - 2019
+													</td>
+													<td>
+														Chinese Language and Culture
+													</td>
+												</tr>
+
+												<tr>
+													<td>xxxxxxxxxxxx</td>
+													<td> 														
+														
+													</td>
+													<td></td>
+												</tr>
+													
+											</tbody>
+											
+										</table>
+									</div>								
+							
+
 							</section>
 
 					</div>
+
 
 				<!-- Footer -->
 				<footer id="footer" style="background-color:#2B282B;">
@@ -72,7 +488,7 @@
 							<h3 style="color:whitesmoke;">Email</h3>
 							<p><a href = "mailto: dom.wichmann@gmail.com" style="color:whitesmoke;">dom.wichmann@gmail.com</a></p>
 						</section>
-						<section>
+						<section id="bottom">
 							<h3 style="color:whitesmoke;">Social</h3>
 							<ul class="icons alt">
 								<li><a href="https://www.linkedin.com/in/domenik-wichmann-3a750618a/" class="icon brands alt fa-linkedin"><span class="label" style="color:whitesmoke;">linkedin</span></a></li>
@@ -86,6 +502,7 @@
 
 			</div>
 
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -94,6 +511,37 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+
+				// Get the button that opens the modal
+				var btn = document.getElementById("myBtn");
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+				
+				// When the user clicks on the button, open the modal
+				btn.onclick = function() {
+ 				 modal.style.display = "block";
+				}
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() {
+  				modal.style.display = "none";
+				}
+
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+  				if (event.target == modal) {
+    			modal.style.display = "none";
+  				}
+				}
+
+
+			</script>
+
+
 
 
 	</body>

@@ -7,6 +7,55 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+
+		/*Image on Text*/
+/* Container holding the image and the text */
+.containerpic {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 0%;
+  right: 42%;
+  color:white;
+}
+
+		</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -15,14 +64,14 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Back to Top</a>
+						<a href="index.html" class="logo">Home</a>
 					</header>
 
 				<!-- Nav -->
 				<nav id="nav">
 					<ul class="links">
-						<li><a href="index.html">Projects</a></li>
-						<li><a href="about.html">About</a></li>
+						<li><a href="index.html#nav">Projects</a></li>
+						<li><a href="about.html#nav">About</a></li>
 						
 					</ul>
 					<ul class="icons">
@@ -37,23 +86,88 @@
 
 						<!-- Post -->
 							<section class="post">
-								<header class="major">
+								<header class="major" style="margin-bottom:-50px">
 									<span class="date">June 2021 - June 2022</span>
 									<h1><a href="https://www.junofarms.com">Juno Farms</a><br />
-									Example Sale Data</h1>
+									<a href="https://docs.google.com/spreadsheets/d/1wV5j9jY0qzx_WO_9epNa1vt6DNRmQEpUS3CHg-HXluU/edit#gid=547109897">Example Sale Data</a></h1>
 									<p>This is one year's worth of sample sales data from my business, <a href="https://www.junofarms.com">Juno Farms.</a><br />
-									Using this data, we will be able to work out extrapolate what sells the most<br />
-									and where most of the profits are made.</p>
-								</header>
-					</div>
+									Using this data, we will be able to extrapolate best sellers, keep track of inventory,<br />
+									and generate simple visualizations</p>
 
-					<div id="main" style="text-align:center;"><iframe width="100%" height="1000px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRMPOxN7ngcj8CB-PiOQ1C_Pk5CK_SCzqCIQLmr5AVcQFN_gya3O_wnQ4R43y3iTx1aSWXGu5R9U1oO/pubhtml?widget=true&amp;headers=false&amp;chrome=false"></iframe></div>
+									
+								</header>
+
+					</div>
 
 					<div id="main">
 								
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								<div id="profile" class="containerpic" style="text-align:center">
+									<a href="https://docs.google.com/spreadsheets/d/1wV5j9jY0qzx_WO_9epNa1vt6DNRmQEpUS3CHg-HXluU/edit#gid=547109897">
+										<img src="images/radchartview-features-animations-main-animations.gif" alt="" style="height:80%; width:80%;" />
+									</a>
+									<div class="centered" style="font-size:3vw;">
+										<a href="https://docs.google.com/spreadsheets/d/1wV5j9jY0qzx_WO_9epNa1vt6DNRmQEpUS3CHg-HXluU/edit#gid=547109897">
+										<p class="small" style="text-align:center; font-family:'Abril Fatface'">
+										<i style="font-family:veranda">
+											<b>Go to Sheet</b>
+										</i>
+										</p>
+										</a>
+									</div>
+								</div>
+																								
+								<h2>How it works</h2>
+
+								<div style="text-align:center">
+									<a href="#info"><button type="button" style="background-color:black">Product Info</button></a>
+									<a href="#collection"><button type="button" style="background-color:black">Data Collection</button></a>
+									<a href="#analysis" class="logo" ><button type="button" style="background-color:black">Data Analysis</button></a>
+								</div>
+
+								<h3 id="info">
+									Product Info
+								</h3>
+								<p>Each product that the business sells has 4 main attrubites: Pruduct Name, Variant, Size, and Price. The size and price are defined in a table. The user can then enter all the products into a seperate table, which will pull the price and size automatically.
+								
+									<img src="images/Screenshot 2022-06-25 004056.png" width=30% height=45% />
+								
+									<img src="images/Screenshot 2022-06-25 004339.png" width=69% height=45% style="margin-top:20px; margin-bottom:20px;" />	
+									
+									After the main attributes are all filled in, a human-readable SKU will be automatically generated. A label and a QR code will be generated as well.
+									The these are both printed on the price tags of the products, and used for tracking inventory.
+									<br/>
+									<br/>								
+								</p>
+								<h3 id="collection">
+									Data Collection
+								</h3>
+								<p>
+									<img src="images/scannerQR.png" width=30% height=30% style="float:left; margin-right: 20px;" />
+									In the 'Sales' tab of the sheet, a date range can be selected. The sheet will then calculate how many of each item was sold during that period, how much each item grossed, the gross revenue, and the net.<br/>
+									<img src="images/Input.png" width=40% height=40% style="float:right; margin-left: 20px;">
+									<br/>The sales are formatted in a wide table, with the dates and location in the header of each column, and the sales underneath<br/>
+									<br/>
+									<br/>								
+								</p>
+								<h3 id="analysis">
+									Data Analysis
+								</h3>
+								<p>
+									<img src="images/date select.png" width=10% height=10% style="float:left; margin-top: 65px;" />									
+									<img src="images/sales data.png" width=20% height=20% style="float:left; margin-top: 65px;margin-bottom: 250px; margin-left: 20px; margin-right: 20px;">
+									In the 'Sales' tab, a date range can be selected.<br/>
+									<br/>The sheet will automatically calulate the total number of each item sold, the total ounces, how much each item grossed, the gross revenue, and the net.<br/>
+									<br/>
+									<img src="images/sales charts.png" width=20% height=20% style="float:right; margin-top: .5%; margin-left: 20px; margin-right: 20px;">
+									The sheet will allow you to see exact sales during any time period, including the amount of any given ingredient that was sold as a mix with other ingredients.
+									
+									The cells are color coded to make spotting trends easy.<br/>
+									<br/>The sheet will also automatically generate some simple visualisations.<br/>
+									<br/>The data will then be compiled in the 'Restock' tab to provide a printer-friendly list of items that need to be restocked.
+									<br/>								
+								</p>
+
+
 							</section>
 
 					</div>
